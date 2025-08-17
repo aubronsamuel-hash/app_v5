@@ -1,0 +1,8 @@
+{
+  "last_run": null,
+  "tasks": {
+    "000_bootstrap": "OPEN",
+    "010_fix_ci": "OPEN"
+  },
+  "current_task": null
+}

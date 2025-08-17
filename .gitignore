@@ -1,0 +1,12 @@
+# Codex temp and local artifacts
+.codex/
+*.patch
+*.log
+# Node
+node_modules/
+# Python
+__pycache__/
+*.pyc
+# OS
+.DS_Store
+Thumbs.db
