@@ -1,12 +1,14 @@
-un agent auto-évolutif qui se modifie étape par étape, valide, corrige, puis passe à l’étape suivante.
+CURRENT_STEP: DEV_CYCLE
+DATE: 2025-08-18 01:37:39 +0400
 
-Ci-dessous, 10 prompts numérotés. Tu peux les exécuter dans l’ordre.
-Chacun contient:
+WHAT_CHANGED:
+- Added PS1/dev_cycle.ps1 to automate pull, docker cycle, tests, frontend build, and API smoke checks.
 
-un bloc SYSTEM (règles strictes),
+TESTS_RUN:
+- pytest
 
-un bloc USER (ta demande),
+NEXT_STEP: NONE
 
-un protocole d’auto-mise-à-jour: l’agent doit écrire/mettre à jour AGENT_STATE.md et adapter ses instructions pour la prochaine étape.
-
-Tout est en ASCII uniquement, sans emoji.
+AGENT_RULES_DELTA:
+- Ensure AGENT_STATE.md uses required section headers from the start.
+- Keep scripts generic to handle missing directories gracefully.
